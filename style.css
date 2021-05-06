@@ -1,91 +1,117 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
 #header{
-    border:2px solid black;
-    width:100%;
-    height:5%;
-    text-align:center;
+    border: 2px solid black;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 #logo{
     color:red;
-    font-size:30px;
-    width: 20%;
-    text-align:left;
-    display:inline-block;
+    font-size: 30px;
+    width: fit-content;
     font: bold;
+    margin-left: 10px;
 }
 #menu{
-    width:70%;
-    text-align:right;
-    text-decoration: none;
-    display:inline-block;
+    width: fit-content;
+    text-align: right;
+    margin-right: 10px;
 }
 #menu>a{
     margin: 5px;
+    text-decoration: none;
 }
 #content{
-    border: 2px solid black;
     width: 100%;
     height:fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 #posts{
     width: 70%;
-    height:fit-content;
+    height: fit-content;
     text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 #post1, #post2, #post3, #post4, #post5{
     width: 90%;
     height: fit-content;
-    border: 2px solid red;
-    margin-left: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin-bottom: 20px;
+    border: 3px solid red;
+    margin: 10px 0px;
+}
+#post1>img, #post2>img, #post3>img, #post4>img, #post5>img{
+    width: 80%;
+    height: 40%;
+    margin-top: 5px;
+}
+#post1>a>button, #post2>a>button, #post3>a>button, #post4>a>button, #post5>a>button{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 5px;
 }
 #sidebar{
-    border: 2px solid black;
-    width: 25%;
+    border: 1px solid red;
+    width: 29%;
     height: fit-content;
-    display: inline-block;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 #ads1, #ads2{
     height: 100%;
     width: 100%;
     text-align: center;
+    margin: 40px 0px;
 }
 #ads1>img, #ads2>img{
+    border: 3px solid red;
     height: fit-content;
     width: fit-content;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
 }
 #query{
-    border: 2px solid black;
+    border: 3px solid black;
     text-align: left;
-    padding-top: 30px;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5%;
+}
+#query>form{
+    margin: 20px 60px;
+    font: bold;
 }
 #aboutus{
     border:2px solid black;
-    width:100%;
-    height:fit-content;
-    padding-bottom: 20px;
+    width: 100%;
+    height: fit-content;
     text-align: center;
 }
 #aboutus>h1{
     text-align: center;
 }
+#team{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
 #aboutus-1,#aboutus-2{
     border:2px solid blue;
     width:fit-content;
     text-align:center;
-    display:inline-block;
     margin-left: 50px;
     background-color:blanchedalmond;
 }
@@ -99,25 +125,45 @@
     height: fit-content;
     width: 100%;
     background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 #name{
-    display: inline-block;
-    width: 40%;
+    border: 1px green;
+    width: fit-content;
 }
 #links{
-    display: inline-block;
-    width: 30%;
+    border: greenyellow;
+    width: fit-content;
+    justify-content: space-between;
 }
 #links>a>img{
     height: 30px;
     width: 30px;
-    padding-left: 20px;
-    margin-top: 25px;
 
 }
-#footer>#menu{
-    width: 25%;
+#footer>menu{
+    border: hotpink;
+    width: fit-content;
     text-align:right;
     text-decoration: none;
-    display:inline-block;
+    justify-content: space-between;
+}
+@media only screen and (max-width:1024px){
+    #posts{
+        width: 100%;
+    }
+    #sidebar{
+        width: 100%;
+        margin-top: 30px;
+    }
+    /*
+    #post1, #post2, #post3, #post4, #post5{
+        width: 85%;
+    
+    }
+    */
 }
