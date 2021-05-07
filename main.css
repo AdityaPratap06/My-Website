@@ -102,6 +102,7 @@ body{
     text-align: center;
 }
 #team{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -111,6 +112,7 @@ body{
 #aboutus-1,#aboutus-2{
     border:2px solid blue;
     width:fit-content;
+    height: fit-content;
     text-align:center;
     margin-left: 50px;
     background-color:blanchedalmond;
@@ -153,17 +155,31 @@ body{
     justify-content: space-between;
 }
 @media only screen and (max-width:1024px){
+    #content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+    }
     #posts{
         width: 100%;
     }
-    #sidebar{
-        width: 100%;
-        margin-top: 30px;
-    }
-    /*
     #post1, #post2, #post3, #post4, #post5{
         width: 85%;
-    
     }
-    */
+    #sidebar{
+        width: 85%;
+        margin-top: 30px;
+    }
+    #query>form{
+        margin: 5px 10px;
+    }
+    #team{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #aboutus-1,#aboutus-2{
+        margin: 10px 0px;
+    }
 }
